@@ -57,7 +57,7 @@
     "webpack": "^5.91.0"
   },
   "peerDependencies": {
-    "ember-concurrency": "2.2.1"
+    "ember-concurrency": "4.x || 5.x"
   },
   "engines": {
     "node": "8.* || >= 10.*"

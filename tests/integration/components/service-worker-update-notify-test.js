@@ -1,36 +1,28 @@
-import { module, skip } from 'qunit';
-import { setupRenderingTest } from 'ember-qunit';
-import '@ember/test-helpers';
-import hbs from 'htmlbars-inline-precompile'
+import { module, skip } from 'qunit'
+import { setupRenderingTest } from 'ember-qunit'
+import '@ember/test-helpers'
 
-module('Integration | Component | service worker update notify', function(hooks) {
-  setupRenderingTest(hooks);
+module(
+  'Integration | Component | service worker update notify',
+  function (hooks) {
+    setupRenderingTest(hooks)
 
-  skip('it renders', function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+    skip('it renders', function (assert) {
+      // Set any properties with this.set('myProperty', 'value');
+      // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(hbs`{{service-worker-update-notify}}`)
+      this.render(hbs`{{service-worker-update-notify}}`)
 
-    assert.equal(
-      this.$()
-        .text()
-        .trim(),
-      '',
-    )
+      assert.equal(this.$().text().trim(), '')
 
-    // Template block usage:
-    this.render(hbs`
+      // Template block usage:
+      this.render(hbs`
       {{#service-worker-update-notify}}
         template block text
       {{/service-worker-update-notify}}
     `)
 
-    assert.equal(
-      this.$()
-        .text()
-        .trim(),
-      'template block text',
-    )
-  })
-});
+      assert.equal(this.$().text().trim(), 'template block text')
+    })
+  },
+)
